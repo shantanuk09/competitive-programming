@@ -15,3 +15,20 @@ public:
         return vr[target];
     }
 };
+
+// Top Down Dynamic Programming
+class Solution {
+public:
+    int helper(vector<int> &vr, vector<int> &nums, int target){
+        if(target == 0) return 1;
+        if(vr[target] != -1) return vr[target];
+        vr[target] = 0;
+        for(auto n : nums)
+            if(n <= target) vr[target] += helper(vr, nums, target - n);
+        return vr[target];
+    }
+    int combinationSum4(vector<int>& nums, int target) {
+        vector<int> vr(target + 1, -1);
+        return helper(vr, nums, target);
+    }
+};

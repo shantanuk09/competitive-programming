@@ -1,4 +1,4 @@
-// uVa 10550 - Combination Lock
+// UVa 10550 - Combination Lock
 #include <iostream>
 
 using namespace std;

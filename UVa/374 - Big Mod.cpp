@@ -1,4 +1,4 @@
-// 374 Big Mod
+// UVa 374 Big Mod
 #include <bits/stdc++.h>
 
 using namespace std;

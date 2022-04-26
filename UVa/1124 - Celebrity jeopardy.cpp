@@ -1,4 +1,4 @@
-// uVa 1124 - Celebrity jeopardy
+// UVa 1124 - Celebrity jeopardy
 #include <iostream>
 
 using namespace std;

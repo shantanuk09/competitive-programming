@@ -1,4 +1,4 @@
-// 1338. Reduce Array Size to The Half
+// LeetCode 1338. Reduce Array Size to The Half
 class Solution {
 public:
     int minSetSize(vector<int>& arr) {

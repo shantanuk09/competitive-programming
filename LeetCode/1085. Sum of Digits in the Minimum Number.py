@@ -1,4 +1,4 @@
-# 1085. Sum of Digits in the Minimum Number
+# LeetCode 1085. Sum of Digits in the Minimum Number
 class Solution:
     def sumOfDigits(self, nums: List[int]) -> int:
         n = min(nums)

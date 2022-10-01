@@ -1,4 +1,4 @@
-# 1450. Number of Students Doing Homework at a Given Time
+# LeetCode 1450. Number of Students Doing Homework at a Given Time
 class Solution:
     def busyStudent(self, startTime: List[int], endTime: List[int], queryTime: int) -> int:
         count = 0

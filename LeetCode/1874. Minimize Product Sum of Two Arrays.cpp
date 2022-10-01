@@ -1,4 +1,4 @@
-// 1874. Minimize Product Sum of Two Arrays
+// LeetCode 1874. Minimize Product Sum of Two Arrays
 class Solution {
 public:
     int minProductSum(vector<int>& nums1, vector<int>& nums2) {

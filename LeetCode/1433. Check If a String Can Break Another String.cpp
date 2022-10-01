@@ -1,4 +1,4 @@
-// 1433. Check If a String Can Break Another String
+// LeetCode 1433. Check If a String Can Break Another String
 class Solution {
 public:
     bool checkIfCanBreak(string s1, string s2) {

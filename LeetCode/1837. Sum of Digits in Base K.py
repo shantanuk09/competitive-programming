@@ -1,4 +1,4 @@
-# 1837. Sum of Digits in Base K
+# LeetCode 1837. Sum of Digits in Base K
 class Solution:
     def sumBase(self, n: int, k: int) -> int:
         if n == 0 : 

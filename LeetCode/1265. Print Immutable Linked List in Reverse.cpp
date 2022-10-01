@@ -1,4 +1,4 @@
-// 1265. Print Immutable Linked List in Reverse
+// LeetCode 1265. Print Immutable Linked List in Reverse
 class Solution {
 public:
     void printLinkedListInReverse(ImmutableListNode* head){

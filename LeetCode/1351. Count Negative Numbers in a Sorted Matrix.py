@@ -1,4 +1,4 @@
-# 961. N-Repeated Element in Size 2N Array
+# LeetCode 961. N-Repeated Element in Size 2N Array
 def countNegatives(self, grid: List[List[int]]) -> int:
         m, n = len(grid), len(grid[0])
         r, c, count = 0, n - 1, 0

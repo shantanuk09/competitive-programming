@@ -1,4 +1,4 @@
-# 1941. Check if All Characters Have Equal Number of Occurrences
+# LeetCode 1941. Check if All Characters Have Equal Number of Occurrences
 class Solution:
     def areOccurrencesEqual(self, s: str) -> bool:
         count = s.count(s[0])

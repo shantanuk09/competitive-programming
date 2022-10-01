@@ -1,4 +1,4 @@
-# 1374. Generate a String With Characters That Have Odd Counts
+# LeetCode 1374. Generate a String With Characters That Have Odd Counts
 class Solution:
     def generateTheString(self, n: int) -> str:
         if n % 2 : 

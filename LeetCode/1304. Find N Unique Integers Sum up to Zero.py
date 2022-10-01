@@ -1,4 +1,4 @@
-# 1304. Find N Unique Integers Sum up to Zero
+# LeetCode 1304. Find N Unique Integers Sum up to Zero
 class Solution:
     def sumZero(self, n: int) -> List[int]:
         lt = []

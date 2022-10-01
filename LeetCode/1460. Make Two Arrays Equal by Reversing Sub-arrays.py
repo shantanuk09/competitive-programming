@@ -1,4 +1,4 @@
-# 876. Middle of the Linked List
+# LeetCode 876. Middle of the Linked List
 # target and arr should contain the same elements.
 class Solution:
     def canBeEqual(self, target: List[int], arr: List[int]) -> bool:

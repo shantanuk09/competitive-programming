@@ -1,4 +1,4 @@
-// 1237. Find Positive Integer Solution for a Given Equation
+// LeetCode 1237. Find Positive Integer Solution for a Given Equation
 class Solution {
 public:
     vector<vector<int>> findSolution(CustomFunction& customfunction, int z) {

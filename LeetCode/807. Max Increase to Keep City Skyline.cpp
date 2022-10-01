@@ -1,19 +1,18 @@
 // LeetCode 807. Max Increase to Keep City Skyline
-class Solution {
+class Solution{
 public:
-    int maxIncreaseKeepingSkyline(vector<vector<int>>& grid) {
-        int n = grid.size();
-        vector<int> col(n, 0), row(n, 0);
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
+    int maxIncreaseKeepingSkyline(vector<vector<int>>& grid){
+       int n = grid.size(), sum = 0;
+        vector<int> row(n, 0), column(n, 0);
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < n; j++){
                 row[i] = max(row[i], grid[i][j]);
-                col[j] = max(col[j], grid[i][j]);
+                column[j] = max(column[j], grid[i][j]);
             }
         }
-        int res = 0;
-        for (int i = 0; i < n; i++)
-            for (int j = 0; j < n; j++)
-                res += min(row[i], col[j]) - grid[i][j];
-        return res;
+        for(int i = 0; i < n; i++)
+            for(int j = 0; j < n; j++)
+                sum += min(row[i], column[j]) - grid[i][j];
+        return sum;
     }
 };

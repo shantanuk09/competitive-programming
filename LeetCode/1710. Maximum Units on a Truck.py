@@ -1,4 +1,4 @@
-# 1710. Maximum Units on a Truck
+# LeetCode 1710. Maximum Units on a Truck
 # Sort boxTypes based on the number of units per box in descending order and fill the truck.
 class Solution:
     def maximumUnits(self, boxTypes: List[List[int]], truckSize: int) -> int:

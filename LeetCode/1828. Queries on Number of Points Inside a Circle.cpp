@@ -1,5 +1,5 @@
-// 1689. Partitioning Into Minimum Number Of Deci-Binary Numbers
-class Solution {
+// LeetCode 1689. Partitioning Into Minimum Number Of Deci-Binary Numbers
+class Solution{
 public:
     vector<int> countPoints(vector<vector<int>>& points, vector<vector<int>>& queries){
         int inside, x, y, a, b, r;

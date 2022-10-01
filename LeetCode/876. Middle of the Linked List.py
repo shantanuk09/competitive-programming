@@ -1,4 +1,4 @@
-# 876. Middle of the Linked List
+# LeetCode 876. Middle of the Linked List
 # Simple two pointer implementation.
 class Solution:
     def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:

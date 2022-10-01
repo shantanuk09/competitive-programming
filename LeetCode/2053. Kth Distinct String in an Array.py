@@ -1,4 +1,4 @@
-# 2053. Kth Distinct String in an Array
+# LeetCode 2053. Kth Distinct String in an Array
 # Using list comprehension.
 class Solution:
     def kthDistinct(self, arr: List[str], k: int) -> str:

@@ -1,4 +1,4 @@
-# 461. Hamming Distance
+# LeetCode 461. Hamming Distance
 class Solution:
     def replaceElements(self, arr: List[int]) -> List[int]:
         big = -1

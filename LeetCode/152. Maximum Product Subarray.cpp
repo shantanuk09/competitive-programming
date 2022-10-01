@@ -1,4 +1,4 @@
-// 152. Maximum Product Subarray
+// LeetCode 152. Maximum Product Subarray
 class Solution {
 public:
     int maxProduct(vector<int>& nums) {

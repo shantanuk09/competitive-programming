@@ -1,4 +1,4 @@
-# 728. Self Dividing Numbers
+# LeetCode 728. Self Dividing Numbers
 class Solution:
     def isSelfDividing(self, number : int) -> bool : 
         n = number

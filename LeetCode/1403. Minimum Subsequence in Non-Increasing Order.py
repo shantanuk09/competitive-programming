@@ -1,4 +1,4 @@
-# 1403. Minimum Subsequence in Non-Increasing Order
+# LeetCode 1403. Minimum Subsequence in Non-Increasing Order
 class Solution:
     def minSubsequence(self, nums: List[int]) -> List[int]:
         nums.sort()

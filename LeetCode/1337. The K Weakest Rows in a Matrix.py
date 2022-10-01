@@ -1,4 +1,4 @@
-# 1337. The K Weakest Rows in a Matrix
+# LeetCode 1337. The K Weakest Rows in a Matrix
 # Add the index value to the end of each row and sort.
 class Solution:
     def kWeakestRows(self, mat: List[List[int]], k: int) -> List[int]:

@@ -1,4 +1,4 @@
-# 2169. Count Operations to Obtain Zero
+# LeetCode 2169. Count Operations to Obtain Zero
 class Solution:
     def countOperations(self, num1: int, num2: int) -> int:
         if num1 * num2 == 0 : 

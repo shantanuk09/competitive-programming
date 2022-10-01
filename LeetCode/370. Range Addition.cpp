@@ -1,4 +1,4 @@
-// 370. Range Addition
+// LeetCode 370. Range Addition
 class Solution {
 public:
     vector<int> getModifiedArray(int length, vector<vector<int>>& updates) {

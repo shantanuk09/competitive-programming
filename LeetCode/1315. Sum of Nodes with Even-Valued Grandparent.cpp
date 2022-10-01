@@ -1,4 +1,5 @@
 // LeetCode 1315. Sum of Nodes with Even-Valued Grandparent
+// BFS.
 class Solution {
 public:
     int sumEvenGrandparent(TreeNode* root){
@@ -18,5 +19,21 @@ public:
             }
         }
         return sum;
+    }
+};
+
+// Recursion.
+class Solution{
+public:
+    int sumEvenGrandparent(TreeNode* root){
+        int sum = 0;
+        if(!root) return 0;
+        else if(root -> val % 2 == 0){
+            if(root -> left && root -> left -> left) sum += root -> left -> left -> val;
+            if(root -> left && root -> left -> right) sum += root -> left -> right -> val;
+            if(root -> right && root -> right -> left) sum += root -> right -> left -> val;
+            if(root -> right && root -> right -> right) sum += root -> right -> right -> val;
+        }
+        return sum + sumEvenGrandparent(root -> left) + sumEvenGrandparent(root -> right);
     }
 };

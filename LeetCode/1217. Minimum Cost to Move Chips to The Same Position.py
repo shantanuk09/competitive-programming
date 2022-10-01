@@ -1,4 +1,4 @@
-# 1217. Minimum Cost to Move Chips to The Same Position
+# LeetCode 1217. Minimum Cost to Move Chips to The Same Position
 class Solution:
     def minCostToMoveChips(self, position: List[int]) -> int:
         even, odd = 0, 0

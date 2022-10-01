@@ -1,4 +1,4 @@
-# 141. Linked List Cycle
+# LeetCode 141. Linked List Cycle
 # If you arrive at a node you have already seen, there's a cycle.
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:

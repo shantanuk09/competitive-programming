@@ -1,4 +1,4 @@
-// 1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold
+// LeetCode 1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold
 class Solution {
 public:
     int numOfSubarrays(vector<int>& arr, int k, int threshold) {

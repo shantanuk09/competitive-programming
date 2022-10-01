@@ -1,4 +1,4 @@
-# 1748. Sum of Unique Elements
+# LeetCode 1748. Sum of Unique Elements
 class Solution:
     def sumOfUnique(self, nums: List[int]) -> int:
         sum = 0

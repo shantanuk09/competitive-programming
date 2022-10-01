@@ -1,4 +1,4 @@
-# 2103. Rings and Rods
+# LeetCode 2103. Rings and Rods
 class Solution:
     def countPoints(self, rings: str) -> int:
         rod = 0

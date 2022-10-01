@@ -1,4 +1,4 @@
-// 1570. Dot Product of Two Sparse Vectors
+// LeetCode 1570. Dot Product of Two Sparse Vectors
 class SparseVector {
 public:
     vector<pair<int, int>> v;

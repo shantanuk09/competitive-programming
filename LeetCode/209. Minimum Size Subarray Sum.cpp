@@ -7,7 +7,7 @@ public:
         for(int end = 0; end < nums.size(); end++){
             sum += nums[end];
             while(sum >= target){
-                if(sum >= target) length = min(length, end - start + 1);
+                length = min(length, end - start + 1);
                 sum -= nums[start];
                 start++;
             }

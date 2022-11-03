@@ -1,4 +1,4 @@
-# LeetCode 234. Palindrome Linked List
+# LeetCode 203. Remove Linked List Elements
 # Copy Linked List into an Array.
 class Solution:
     def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:

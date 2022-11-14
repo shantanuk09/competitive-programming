@@ -1,23 +1,23 @@
 # LeetCode 191. Number of 1 Bits
-# Count bit wise.
+# Standard algorithm.
 class Solution:
     def hammingWeight(self, n: int) -> int:
-        weight = 0
+        count = 0
         while n : 
-            if n&1 : weight += 1
+            count += n&1
             n >>= 1
-        return weight
+        return count
 
-# Convert to binary and count.
+# Brian Kernighan Algorithm
 class Solution:
     def hammingWeight(self, n: int) -> int:
-        return bin(n).count("1")
-
-# Fastest Method.
-class Solution:
-    def hammingWeight(self, n: int) -> int:
-        weight = 0
+        count = 0
         while n : 
             n &= (n - 1)
-            weight += 1
-        return weight
+            count += 1
+        return count
+
+# The Snek strikes again.
+class Solution:
+    def hammingWeight(self, n: int) -> int:
+        return n.bit_count()

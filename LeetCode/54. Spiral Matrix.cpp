@@ -1,6 +1,6 @@
 // LeetCode 54. Spiral Matrix
-// Simulation.
-class Solution {
+// Simulate. 
+class Solution{
 public:
     vector<int> spiralOrder(vector<vector<int>>& matrix){
         int m = matrix.size(), n = matrix[0].size(), i = 0, j = 0, big = 9999;

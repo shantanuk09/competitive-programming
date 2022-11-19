@@ -1,8 +1,8 @@
 // LeetCode 91. Decode Ways
-// Dynamic Programming 
-class Solution {
+// Dynamic Programming
+class Solution{
 public:
-    int numDecodings(string s) {
+    int numDecodings(string s){
         int n = s.size();
         vector<int> vr(n + 1);
         vr[n] = 1;
@@ -13,6 +13,6 @@ public:
                 if(i < n - 1 && (s[i] == '1' || s[i] == '2' && s[i + 1] < '7')) vr[i] += vr[i + 2];
             }
         }
-        return (n == 0) ? (0) : (vr[0]);
+        return n == 0 ? 0 : vr[0];
     }
 };

@@ -3,7 +3,6 @@
 class Solution{
 public:
     int findMinFallingPathSum(vector<vector<int>> &matrix, int row, int col, vector<vector<optional<int>>> &memo){
-        int minFallingSum = INT_MAX;
         if(col < 0 || col == matrix[0].size()) return INT_MAX;
         if(row == matrix.size() - 1) return matrix[row][col];
         if(memo[row][col] != nullopt) return memo[row][col].value_or(0);

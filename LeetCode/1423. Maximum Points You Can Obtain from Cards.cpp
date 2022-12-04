@@ -1,4 +1,4 @@
-// 2028. 1423. Maximum Points You Can Obtain from Cards
+// LeetCode 1423. Maximum Points You Can Obtain from Cards
 // Prefix sum. 
 class Solution{
 public:

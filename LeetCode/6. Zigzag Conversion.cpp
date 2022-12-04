@@ -1,4 +1,4 @@
-// 45. 6. Zigzag Conversion
+// LeetCode 6. Zigzag Conversion
 // Implementation
 class Solution{
 public:

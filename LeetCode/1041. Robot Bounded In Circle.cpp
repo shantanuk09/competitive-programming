@@ -1,4 +1,4 @@
-// 45. 1041. Robot Bounded In Circle
+// LeetCode 1041. Robot Bounded In Circle
 // Mathematics.
 class Solution{
 public:

@@ -1,4 +1,4 @@
-// 2028. 846. Hand of Straights
+// LeetCode 846. Hand of Straights
 // Map.
 class Solution{
 public:

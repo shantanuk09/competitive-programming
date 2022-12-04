@@ -1,15 +1,13 @@
-# LeetCode 463. Island Perimeter
+// 463. Island Perimeter
+// Implementation.
 class Solution:
     def islandPerimeter(self, grid: List[List[int]]) -> int:
-        p, m, n = 0, len(grid), len(grid[0])
-        for i in range(0, m) : 
-            for j in range(0, n) : 
-                if grid[i][j] and i + 1 >= m : p += 1
-                elif grid[i][j] and grid[i + 1][j] == 0 : p += 1
-                if grid[i][j] and i - 1 < 0 : p += 1
-                elif grid[i][j] and grid[i - 1][j] == 0 : p += 1
-                if grid[i][j] and j + 1 >= n : p += 1
-                elif grid[i][j] and grid[i][j + 1] == 0 : p += 1
-                if grid[i][j] and j - 1 < 0 : p += 1
-                elif grid[i][j] and grid[i][j - 1] == 0 : p += 1
-        return p
+        perimeter = 0
+        for i in range(len(grid)) : 
+            for j in range(len(grid[0])) : 
+                if grid[i][j] == 1 :
+                    if i - 1 < 0 or (i - 1 >= 0 and grid[i - 1][j] == 0) : perimeter += 1
+                    if i + 1 == len(grid) or (i + 1 < len(grid) and grid[i + 1][j] == 0) : perimeter += 1
+                    if j - 1 < 0 or (j - 1 >= 0 and grid[i][j - 1] == 0) : perimeter += 1
+                    if j + 1 == len(grid[0]) or (j + 1 < len(grid[0]) and grid[i][j + 1] == 0) : perimeter +=1
+        return perimeter 

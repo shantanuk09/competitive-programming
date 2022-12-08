@@ -1,18 +1,20 @@
 // LeetCode 128. Longest Consecutive Sequence
-// Using Hash Map.
-class Solution {
+// Use a map.
+class Solution{
 public:
-    int longestConsecutive(vector<int>& nums) {
-        int length = 0, longest = 0, previous;
-        map<int, int> mp;
-        for(int n : nums)
-            mp[n] = 1;
-        previous--;
-        for(auto [key, value] : mp){
-            if(length == 0) previous = key - 1;
-            if(previous + 1 == key) length++, previous = key, longest = max(length, longest);
-            else length = 1, previous = key, longest = max(length, longest);
+    int longestConsecutive(vector<int>& nums){
+        int previous = INT_MAX;
+        int length;
+        int maxLength;
+        map<int, int> mapping;
+        for(auto n : nums)
+            mapping[n] = 1;
+        for(auto [key, value] : mapping){
+            maxLength = max(maxLength, length);
+            if(previous == INT_MAX || key - previous != 1) length = 1;
+            else length++;
+            previous = key;
         }
-        return longest;
+        return max(maxLength, length);
     }
 };

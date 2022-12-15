@@ -1,15 +1,17 @@
 // LeetCode 98. Validate Binary Search Tree
-// DFS.
+// Inorder Traversal.
 class Solution{
 public:
-    bool helper(TreeNode *root, long long low, long high){
-        if(root == NULL) return true;
-        if(root -> val <= low || high <= root -> val) return false;
-        return helper(root -> left, low, root -> val) && helper(root -> right, root -> val, high);
+    void traverse(TreeNode *root, vector<int> &values){
+        if(root == NULL) return;
+        traverse(root -> left, values);
+        values.push_back(root -> val);
+        traverse(root -> right, values);
     }
 
-    bool isValidBST(TreeNode* root){
-        // LONG_LONG_MIN & LONG_LONG_MAX exist too.
-        return helper(root, LONG_MIN, LONG_MAX);
+    int kthSmallest(TreeNode* root, int k){
+        vector<int> values;
+        traverse(root, values);
+        return values[k - 1];
     }
 };

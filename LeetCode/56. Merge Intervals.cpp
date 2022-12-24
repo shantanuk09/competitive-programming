@@ -1,4 +1,5 @@
 // LeetCode 56. Merge Intervals
+// Implementation.
 class Solution{
 public:
     vector<vector<int>> merge(vector<vector<int>>& intervals){

@@ -15,18 +15,12 @@ public:
     int numEnclaves(vector<vector<int>>& grid){
         int m = grid.size();
         int n = grid[0].size();
-        int count = 0;
-        for(int i = 0; i < m; i++){
-            deleteLand(grid, i, 0);
-            deleteLand(grid, i, n - 1);
-        }
-        for(int i = 0; i < n; i++){
-            deleteLand(grid, 0, i);
-            deleteLand(grid, m - 1, i);
-        }
+        int cells = 0;
+        for(int i = 0; i < m; i++)
+            for(int j = 0; j < n; j++)
+                if(i == 0 || j == 0 || i == m - 1 || j == n - 1) deleteLand(grid, i, j);
         for(auto row : grid)
-            for(auto cell : row)
-                if(cell == 1) count++;
-        return count;
+            cells += count(row.begin(), row.end(), 1);
+        return cells;
     }
 };

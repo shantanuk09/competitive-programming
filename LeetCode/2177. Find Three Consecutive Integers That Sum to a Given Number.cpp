@@ -1,0 +1,9 @@
+// LeetCode 2177. Find Three Consecutive Integers That Sum to a Given Number
+class Solution{
+public:
+    vector<long long> sumOfThree(long long num){
+        if(num % 3 != 0) return {};
+        long long n = num / 3;
+        return {n - 1, n, n + 1};
+    }
+};

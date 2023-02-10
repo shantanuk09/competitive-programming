@@ -6,3 +6,9 @@ class Solution:
             if s[i].isalpha() : length += 1
             elif length > 0 and s[i] == " " : break
         return length
+
+# Alternate
+class Solution:
+    def lengthOfLastWord(self, s: str) -> int:
+        words = s.split()
+        return len(words[len(words) - 1])

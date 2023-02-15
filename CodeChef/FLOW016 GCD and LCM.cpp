@@ -1,4 +1,4 @@
-// FLOW016 GCD and LCM
+// CodeChef FLOW016 GCD and LCM
 #include <iostream>
 
 using namespace std;
